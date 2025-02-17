@@ -1,5 +1,6 @@
 import { PageSection, PageSectionDescription, PageSectionHeading } from "@/components/page-section";
 import { buttonVariants } from "@/components/ui/button";
+import { contactOptions } from "@/config/contact-options";
 import { workExamples } from "@/config/work-examples";
 import { ChevronsRightIcon } from "lucide-react";
 import Image from "next/image";
@@ -109,6 +110,48 @@ export default function IndexPage() {
             </Link>
           </div>
         </div>
+      </PageSection>
+      <PageSection>
+        <PageSectionHeading>Susisiekite su mumis</PageSectionHeading>
+        <PageSectionDescription>
+          Jei norėtumėte susitarti dėl jūsų automobilio antikorozinio padengimo ar turite kokių nors
+          klausimų, būtinai susiekite su mumis.
+        </PageSectionDescription>
+        <div className="mb-12 flex justify-between gap-8 md:mb-16 max-sm:flex-col sm:flex-wrap">
+          {contactOptions.map(({ type, icon: Icon, label, description }) => (
+            <div
+              key={label}
+              className="py-5 flex-col gap-4 md:flex-row flex px-4 md:px-5 border border-neutral-200 rounded-lg shadow-sm flex-1"
+            >
+              <div className="size-10 border border-neutral-200 shadow-sm rounded-lg flex items-center justify-center">
+                <Icon className="size-5 text-neutral-700" />
+              </div>
+              <div className="space-y-1">
+                <h3 className="text-sm text-neutral-600 font-semibold">{label}</h3>
+                {type ? (
+                  <a
+                    href={`${type === "phone" ? "tel" : "mailto"}:${description}`}
+                    className="font-semibold truncate block text-neutral-900 text-xl whitespace-nowrap"
+                  >
+                    {description}
+                  </a>
+                ) : (
+                  <p className="font-semibold truncate text-neutral-900 text-xl whitespace-nowrap">
+                    {description}
+                  </p>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+        <Image
+          src="/map.webp"
+          width={1216}
+          height={684}
+          loading="lazy"
+          className="h-full w-full rounded-2xl"
+          alt="Žemėlapio nuotrauka"
+        />
       </PageSection>
     </>
   );
