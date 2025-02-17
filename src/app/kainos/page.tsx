@@ -1,9 +1,8 @@
 import { PageHeader, PageHeaderDescription, PageHeaderHeading } from "@/components/page-header";
-import { PageSection, PageSectionDescription, PageSectionHeading } from "@/components/page-section";
+import { PageSection, PageSectionHeading } from "@/components/page-section";
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableHead,
   TableHeader,
