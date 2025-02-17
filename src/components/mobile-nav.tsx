@@ -37,7 +37,7 @@ export function MobileNav() {
           <DrawerContent>
             <DrawerTitle className="sr-only">Navigacijos meniu</DrawerTitle>
             <div className="flex flex-col gap-4 p-6">
-              <ul className="space-y-0.5 *:text-gray-900 *:font-semibold *:py-3">
+              <ul className="space-y-0.5 *:text-neutral-900 *:font-semibold *:py-3">
                 {navLinks.map(({ href, label, isButton }) => (
                   <li key={href}>
                     <MobileLink
