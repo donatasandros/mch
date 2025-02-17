@@ -1,5 +1,6 @@
-import { PageSection, PageSectionHeading } from "@/components/page-section";
+import { PageSection, PageSectionDescription, PageSectionHeading } from "@/components/page-section";
 import { buttonVariants } from "@/components/ui/button";
+import { workExamples } from "@/config/work-examples";
 import { ChevronsRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -82,6 +83,32 @@ export default function IndexPage() {
           className="rounded-2xl"
           alt="Mašinos nuotrauka"
         />
+      </PageSection>
+      <PageSection className="bg-neutral-100">
+        <PageSectionHeading>Atlikti darbai</PageSectionHeading>
+        <PageSectionDescription>
+          Pamatykite mūsų atliktų antikorozinių padengimų nuotraukas.
+        </PageSectionDescription>
+        <div className="relative mb-4 md:mb-8  ">
+          <div className="grid grid-cols-1 max-sm:*:nth-last-3:hidden max-lg:*:nth-last-1:hidden max-lg:*:nth-last-2:hidden gap-4 sm:grid-cols-2 lg:grid-cols-3 *:h-full *:w-full *:rounded-2xl *:object-cover">
+            {workExamples.map(({ src }) => (
+              <Image
+                key={src}
+                src={src}
+                width={416}
+                height={312}
+                loading="lazy"
+                alt="Atlikto darbo nuotrauka"
+              />
+            ))}
+          </div>
+          <div className="absolute inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-neutral-100 pb-8 pt-48">
+            <Link href="/atlikti-darbai" className={buttonVariants({ size: "lg" })}>
+              Pamatyti daugiau
+              <ChevronsRightIcon />
+            </Link>
+          </div>
+        </div>
       </PageSection>
     </>
   );

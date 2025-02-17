@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} antialiased flex min-h-screen flex-col`}>
+      <body
+        className={`${inter.className} antialiased overflow-x-hidden flex min-h-screen flex-col`}
+      >
         <header>
           <MainNav />
           <MobileNav />
