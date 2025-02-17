@@ -48,26 +48,26 @@ export default function IndexPage() {
         <PageSectionHeading className="text-left">
           Kodėl reikalingas antikorozinis padengimas?
         </PageSectionHeading>
-        <div className="grid grid-cols-1 mb-12 md:mb-16 md:grid-cols-2 gap-6 text-lg text-neutral-600 *:md:order-none">
-          <p className="order-1">
+        <div className="grid grid-cols-1 mb-12 md:mb-16 md:grid-cols-2 gap-6 text-lg text-neutral-600">
+          <p>
             Devynesdešimtieji jau trečias dešimtmetis kaip pasibaigė, o kartu su gūdžiais laikais
             baigėsi ir automobilių gamintojų varžytuvės dėl aukščiausios kokybės. Gamintojai
             suprato, jog automobilis turi ne tik tarnauti žmogui, bet ir nešti pelną, o kaip kitaip
             priversti žmones naujinti savo senąją transporto priemonę? Tai labai paprasta!
           </p>
-          <p className="order-3">
+          <p className="max-md:order-3">
             Tas pats įvyko ir su dugno apsauga nuo korozijos. Gamintojai pradėjo slėpti nudažytą
             dugną po dugno apsaugomis jau 90-ųjų pabaigoje, ko pasekoje po apsaugomis renkasi
             purvas, kuris sulaiko drėgmę. Laikui bėgant dėl vibracijos purvas dažus pratrina ir
             prasideda korozijos procesas, kuris tampa lyg vėžys jūsų automobiliui.
           </p>
-          <p className="order-2">
+          <p>
             Jau seniai nebenaudojama autopramonėje oem guma, kuri saugojo automobilius nuo akmenukų
             ir kitų abrazyvų, kuriuos išmeta padangos juo važiuojant. Nekalbant jau apie automobilių
             lengvinimą važiuoklėje ar variklio skyriuje, kur patikimą plieną pakeitė nesunkiai
             ištampomu, išbaladojamu aliuminiu.
           </p>
-          <p className="order-4">
+          <p className="max-md:order-4">
             Surūdijusį dugną, atsiradusias dėl korozijos skyles pastebi techninės apžiūros
             specialistai, kurie dažnai priverčia žmones keisti mylimą automobilį naujesniu. Taip pat
             nuo to priklauso ir mūsų saugumas kelyje, nes pažeistas kėbulas smūgio metu yra lengviau
