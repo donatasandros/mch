@@ -1,4 +1,4 @@
-import { PageSection, PageSectionDescription, PageSectionHeading } from "@/components/page-section";
+import { PageSection, PageSectionHeading } from "@/components/page-section";
 import { buttonVariants } from "@/components/ui/button";
 import { ChevronsRightIcon } from "lucide-react";
 import Image from "next/image";
