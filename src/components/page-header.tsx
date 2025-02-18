@@ -11,7 +11,7 @@ function PageHeader({ className, children, ...props }: React.HTMLAttributes<HTML
 function PageHeaderHeading({ className, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
   return (
     <h1
-      className={cn("text-4xl font-semibold leading-[1.1] text-neutral-900 sm:text-5xl", className)}
+      className={cn("text-4xl font-semibold text-neutral-900 md:text-5xl", className)}
       {...props}
     />
   );

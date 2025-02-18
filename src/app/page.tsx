@@ -13,7 +13,7 @@ export default function IndexPage() {
         <div className="mx-auto max-w-container">
           <div className="grid grid-cols-1 items-center gap-y-16 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-0">
             <div>
-              <h1 className="mb-4 text-4xl font-semibold leading-[1.1] text-neutral-900 sm:text-5xl md:mb-6 lg:text-6xl">
+              <h1 className="mb-4 text-4xl font-semibold text-neutral-900 md:mb-6 md:text-6xl">
                 Antikorozinis padengimas jūsų automobiliui
               </h1>
               <p className="mb-4 max-w-lg text-lg text-neutral-600 md:mb-8">
