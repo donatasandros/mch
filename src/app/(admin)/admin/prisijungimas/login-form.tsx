@@ -45,7 +45,7 @@ export function LoginForm() {
               <FormItem>
                 <FormLabel>El. paštas</FormLabel>
                 <FormControl>
-                  <Input placeholder="Įveskite savo el. paštą" {...field} />
+                  <Input type="email" placeholder="Įveskite savo el. paštą" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -58,7 +58,7 @@ export function LoginForm() {
               <FormItem>
                 <FormLabel>Slaptažodis</FormLabel>
                 <FormControl>
-                  <Input placeholder="••••••••" {...field} />
+                  <Input type="password" placeholder="••••••••" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
