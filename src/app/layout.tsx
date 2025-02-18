@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { MainNav } from "@/components/main-nav";
-import { MobileNav } from "@/components/mobile-nav";
-import { Footer } from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,12 +20,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${inter.className} antialiased overflow-x-hidden flex min-h-screen flex-col`}
       >
-        <header>
-          <MainNav />
-          <MobileNav />
-        </header>
-        <main className="flex-1 pt-[65px] lg:pt-[73px]">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

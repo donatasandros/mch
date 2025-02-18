@@ -6,7 +6,7 @@ import { ChevronsRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function IndexPage() {
+export default async function IndexPage() {
   return (
     <>
       <section className="px-4 pt-16 sm:px-6 md:px-8 md:pb-4">
@@ -111,7 +111,7 @@ export default function IndexPage() {
           </div>
         </div>
       </PageSection>
-      <PageSection>
+      <PageSection id="kontaktai">
         <PageSectionHeading>Susisiekite su mumis</PageSectionHeading>
         <PageSectionDescription>
           Jei norėtumėte susitarti dėl jūsų automobilio antikorozinio padengimo ar turite kokių nors

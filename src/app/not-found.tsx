@@ -10,7 +10,7 @@ export default function NotFound() {
   const router = useRouter();
 
   return (
-    <PageSection>
+    <PageSection className="min-h-screen flex justify-center items-center">
       <div className="flex flex-col items-center">
         <div className="mb-4 bg-white shadow-sm border flex items-center gap-x-1.5 border-neutral-300 rounded-lg py-1 px-2.5 text-sm font-medium text-neutral-700">
           <div className="size-1.5 rounded-full bg-tangelo-600"></div>

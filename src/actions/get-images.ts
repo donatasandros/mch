@@ -1,12 +1,7 @@
 "use server";
 
+import { Image } from "@/definitions";
 import { db } from "@vercel/postgres";
-
-interface Image {
-  id: string;
-  url: string;
-  created_at: string;
-}
 
 export async function getImages() {
   try {
