@@ -1,6 +1,6 @@
 # Miami Car House
 
-A modern marketing website for a company that offers anti-corrosion coating for cars
+A modern marketing website for a company specializing in anti-corrosion coatings for cars, built with NextJS.
 
 ![Project thumbnail](https://github.com/donatasandros/mch/blob/main/public/og.jpg)
 
