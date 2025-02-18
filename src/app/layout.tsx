@@ -20,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        suppressHydrationWarning
         className={`${inter.className} antialiased overflow-x-hidden flex min-h-screen flex-col`}
       >
         <header>

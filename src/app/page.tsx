@@ -23,7 +23,7 @@ export default function IndexPage() {
               <div className="flex flex-col-reverse gap-4 xs:flex-row">
                 <Link
                   href="/atlikti-darbai"
-                  className={buttonVariants({ variant: "tertiary", size: "lg" })}
+                  className={buttonVariants({ variant: "secondary", size: "lg" })}
                 >
                   Atlikti darbai
                   <ChevronsRightIcon />
