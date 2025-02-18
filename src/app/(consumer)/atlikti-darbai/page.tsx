@@ -3,8 +3,6 @@ import { PageSection } from "@/components/page-section";
 import { Suspense } from "react";
 import { Gallery, GallerySkeleton } from "./gallery";
 
-export const dynamic = "force-dynamic";
-
 export default async function AtliktiDarbaiPage() {
   return (
     <>
