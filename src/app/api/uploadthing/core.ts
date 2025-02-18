@@ -1,6 +1,6 @@
 import { verifySession } from "@/actions/auth";
 import { db } from "@vercel/postgres";
-import { revalidateTag } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { createUploadthing, type FileRouter } from "uploadthing/next";
 import { UploadThingError } from "uploadthing/server";
 
@@ -25,6 +25,7 @@ export const ourFileRouter = {
         await db.query(`INSERT INTO images (url) VALUES ($1)`, [file.ufsUrl]);
 
         revalidateTag("gallery");
+        revalidatePath("/atlikti-darbai");
       } catch (error) {
         console.error(
           `Failed to insert image(s) into the database: ${
