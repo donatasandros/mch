@@ -1,9 +1,14 @@
+"use client";
+
 import { PageSection } from "@/components/page-section";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { ChevronsLeftIcon } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function NotFound() {
+  const router = useRouter();
+
   return (
     <PageSection>
       <div className="flex flex-col items-center">
@@ -20,7 +25,7 @@ export default function NotFound() {
           </p>
         </div>
         <div className="flex items-center justify-center gap-3">
-          <Button variant="secondary" size="lg">
+          <Button variant="secondary" size="lg" onClick={() => router.back()}>
             <ChevronsLeftIcon />
             Grįžti atgal
           </Button>
