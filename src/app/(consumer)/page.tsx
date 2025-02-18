@@ -11,6 +11,9 @@ const title = "Antikorozinis padengimas jūsų automobiliui";
 
 export const metadata: Metadata = {
   title,
+  openGraph: {
+    title,
+  },
 };
 
 export default async function IndexPage() {

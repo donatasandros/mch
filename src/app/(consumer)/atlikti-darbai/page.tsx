@@ -10,6 +10,9 @@ const title = "Atliktų darbų pavyzdžiai";
 
 export const metadata: Metadata = {
   title,
+  openGraph: {
+    title,
+  },
 };
 
 export default async function AtliktiDarbaiPage() {

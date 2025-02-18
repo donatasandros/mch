@@ -15,6 +15,9 @@ const title = "Paslaugų kainos";
 
 export const metadata: Metadata = {
   title,
+  openGraph: {
+    title,
+  },
 };
 
 export default function KainosPage() {

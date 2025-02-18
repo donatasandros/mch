@@ -10,6 +10,9 @@ const title = "Svetainės valdymas";
 
 export const metadata: Metadata = {
   title,
+  openGraph: {
+    title,
+  },
 };
 
 async function UTSSR() {
