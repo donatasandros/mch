@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     default: siteConfig.name,
     template: `%s - ${siteConfig.name}`,
   },
+  metadataBase: new URL(siteConfig.url),
   description: siteConfig.description,
   keywords: ["Antikorozinis padengimas", "Dugnas", "Korozija", "Danga", "Miami Car House"],
   openGraph: {
@@ -18,7 +19,6 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
-    siteName: siteConfig.name,
     images: [
       {
         url: siteConfig.ogImage,
