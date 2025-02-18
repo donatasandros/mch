@@ -9,6 +9,13 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { services } from "@/config/services";
+import { type Metadata } from "next";
+
+const title = "Paslaugų kainos";
+
+export const metadata: Metadata = {
+  title,
+};
 
 export default function KainosPage() {
   return (

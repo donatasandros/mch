@@ -2,8 +2,15 @@ import { PageHeader, PageHeaderDescription, PageHeaderHeading } from "@/componen
 import { PageSection } from "@/components/page-section";
 import { Suspense } from "react";
 import { Gallery, GallerySkeleton } from "./gallery";
+import { Metadata } from "next";
 
 export const dynamic = "force-dynamic";
+
+const title = "Atliktų darbų pavyzdžiai";
+
+export const metadata: Metadata = {
+  title,
+};
 
 export default async function AtliktiDarbaiPage() {
   return (

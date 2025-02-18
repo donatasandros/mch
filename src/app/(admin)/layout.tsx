@@ -4,6 +4,13 @@ import { NextSSRPlugin } from "@uploadthing/react/next-ssr-plugin";
 import { extractRouterConfig } from "uploadthing/server";
 import { ourFileRouter } from "@/app/api/uploadthing/core";
 import { Suspense } from "react";
+import { Metadata } from "next";
+
+const title = "Svetainės valdymas";
+
+export const metadata: Metadata = {
+  title,
+};
 
 async function UTSSR() {
   await connection();

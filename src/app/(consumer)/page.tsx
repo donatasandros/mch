@@ -3,8 +3,15 @@ import { buttonVariants } from "@/components/ui/button";
 import { contactOptions } from "@/config/contact-options";
 import { workExamples } from "@/config/work-examples";
 import { ChevronsRightIcon } from "lucide-react";
+import { type Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+const title = "Antikorozinis padengimas jūsų automobiliui";
+
+export const metadata: Metadata = {
+  title,
+};
 
 export default async function IndexPage() {
   return (
