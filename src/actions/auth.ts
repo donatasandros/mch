@@ -11,16 +11,6 @@ import { loginSchema, SessionPayload, User } from "@/definitions";
 
 const secretKey = new TextEncoder().encode(process.env.AUTH_SECRET);
 
-// const cookie = {
-//   name: "session",
-//   options: {
-//     httpOnly: true,
-//     secure: process.env.NODE_ENV === "production",
-//     path: "/",
-//   },
-//   duration: 24 * 60 * 60 * 1000,
-// };
-
 async function encrypt(payload: SessionPayload) {
   return new SignJWT(payload)
     .setProtectedHeader({ alg: "HS256" })
@@ -54,8 +44,8 @@ async function createSession(userId: string) {
 }
 
 async function verifySession() {
-  const existingCookie = (await cookies()).get("session")?.value;
-  const session = await decrypt(existingCookie);
+  const cookie = (await cookies()).get("session")?.value;
+  const session = await decrypt(cookie);
 
   if (!session?.userId) {
     redirect("/admin/prisijungimas");
