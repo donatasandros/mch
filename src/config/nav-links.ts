@@ -9,7 +9,7 @@ export const navLinks = [
   },
   {
     label: "Kontaktai",
-    href: "#kontaktai",
+    href: "/#kontaktai",
     isButton: true,
   },
 ];
