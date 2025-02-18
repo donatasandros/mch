@@ -1,11 +1,12 @@
 import { getImages } from "@/actions/get-images";
 import { Skeleton } from "@/components/ui/skeleton";
 import Image from "next/image";
-import { unstable_cacheLife as cacheLife } from "next/cache";
+import { unstable_cacheLife as cacheLife, unstable_cacheTag as cacheTag } from "next/cache";
 
 async function Gallery() {
   "use cache";
-  cacheLife("days");
+  cacheTag("gallery");
+  cacheLife("minutes");
 
   const images = await getImages();
 
