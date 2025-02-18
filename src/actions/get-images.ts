@@ -10,9 +10,9 @@ interface Image {
 
 export async function getImages() {
   try {
-    const { rows } = await db.query("SELECT * FROM images");
+    const { rows } = await db.query<Image>("SELECT * FROM images");
 
-    return rows as Image[];
+    return rows;
   } catch (error) {
     console.error(
       `Failed to fetch images from the database: ${
