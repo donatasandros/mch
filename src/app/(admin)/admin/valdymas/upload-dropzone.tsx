@@ -28,7 +28,7 @@ export function UploadDropzone() {
         container:
           "focus-visible:ring-tangelo-500 focus-visible:border-tangelo-300 focus-visible:ring-2 outline-0 data-[state=uploading]:bg-neutral-50 bg-white border rounded-xl border-neutral-200 border-solid py-4 px-6",
         button:
-          "py-1.5 group min-w-[210px] outline-0 focus-visible:ring-tangelo-500 focus-within:ring-tangelo-500 focus-visible:ring-2 focus-visible:ring-offset-2  focus-visible:ring-tangelo-500 after:bg-tangelo-700 px-4 w-fit gap-1.5 h-9 text-sm !bg-tangelo-600 !text-white border-transparent",
+          "py-1.5 group shadow-sm min-w-[210px] outline-0 focus-visible:ring-tangelo-500 focus-within:ring-tangelo-500 focus-visible:ring-2 focus-visible:ring-offset-2  focus-visible:ring-tangelo-500 after:bg-tangelo-700 px-4 w-fit gap-1.5 h-9 text-sm !bg-tangelo-600 !text-white border-transparent",
         label: "text-neutral-600 w-fit text-sm font-normal hover:text-neutral-600 mb-1",
         allowedContent: "text-xs text-neutral-600",
         uploadIcon: "size-10",
